@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -11,64 +11,112 @@
 <body>
 	<section class="table">
 		<div class="container">
+			<div class="table__form">
+				<form action="#">
+					<input placeholder="Введите слово" name="name" type="text" class="table__input">
+					<button class="table__btn">Поиск</button>
+				</form>
+				<div class="table__text"></div>
+			</div>
 			<div class="table__wrapper">
-				<div class="table__list">
-					<div class="table__time">Время</div>
-					<div class="table__item">Пн</div>
-					<div class="table__item">Вт</div>
-					<div class="table__item">Ср</div>
-					<div class="table__item">Чт</div>
-				</div>
-				<div class="table__list">
-					<div class="table__time"><span>Время</span>08:30</div>
-					<div class="table__item"><span>Пн</span>Алгебра</div>
-					<div class="table__item"><span>Вт</span>Физика</div>
-					<div class="table__item"><span>Ср</span>Инф-ка</div>
-					<div class="table__item"><span>Чт</span>Химия</div>
-				</div>
-				<div class="table__list">
-					<div class="table__time"><span>Время</span>10:05</div>
-					<div class="table__item"><span>Пн</span>Химия</div>
-					<div class="table__item"><span>Вт</span>Алгебра</div>
-					<div class="table__item"><span>Ср</span>Физика</div>
-					<div class="table__item"><span>Чт</span>Инф-ка</div>
-				</div>
-				<div class="table__list">
-					<div class="table__time"><span>Время</span>10:25</div>
-					<div class="table__item"><span>Пн</span>Инф-ка</div>
-					<div class="table__item"><span>Вт</span>Химия</div>
-					<div class="table__item"><span>Ср</span>Алгебра</div>
-					<div class="table__item"><span>Чт</span>Физика</div>
-				</div>
-				<div class="table__list">
-					<div class="table__time"><span>Время</span>12:00</div>
-					<div class="table__item"><span>Пн</span>Физика</div>
-					<div class="table__item"><span>Вт</span>Инф-ка</div>
-					<div class="table__item"><span>Ср</span>Химия</div>
-					<div class="table__item"><span>Чт</span>Алгебра</div>
-				</div>
-				<!-- <button class="table__btn-add">Добавить сотрудника</button> -->
+				<ul>
+					<li>Время</li>
+					<li>Пн</li>
+					<li>Вт</li>
+					<li>Ср</li>
+					<li>Чт</li>
+				</ul>
+				<ul>
+					<li>
+						<span class="table__title">Время</span>
+						<span data-search class="table__cell">08:30</span>
+					</li>
+					<li>
+						<span class="table__title">Пн</span>
+						<span data-search class="table__cell">Алгебра</span>
+					</li>
+					<li>
+						<span class="table__title">Вт</span>
+						<span data-search class="table__cell">Химия</span>
+					</li>
+					<li>
+						<span class="table__title">Ср</span>
+						<span data-search class="table__cell">Инф-ка</span>
+					</li>
+					<li>
+						<span class="table__title">Чт</span>
+						<span data-search class="table__cell">Физика</span>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<span class="table__title">Время</span>
+						<span class="table__cell">10:05</span>
+					</li>
+					<li>
+						<span class="table__title">Пн</span>
+						<span class="table__cell">Химия</span>
+					</li>
+					<li>
+						<span class="table__title">Вт</span>
+						<span class="table__cell">Алгебра</span>
+					</li>
+					<li>
+						<span class="table__title">Ср</span>
+						<span class="table__cell">Физика</span>
+					</li>
+					<li>
+						<span class="table__title">Чт</span>
+						<span class="table__cell">Инф-ка</span>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<span class="table__title">Время</span>
+						<span class="table__cell">10:25</span>
+					</li>
+					<li>
+						<span class="table__title">Пн</span>
+						<span class="table__cell">Инф-ка</span>
+					</li>
+					<li>
+						<span class="table__title">Вт</span>
+						<span class="table__cell">Химия</span>
+					</li>
+					<li>
+						<span class="table__title">Ср</span>
+						<span class="table__cell">Алгебра</span>
+					</li>
+					<li>
+						<span class="table__title">Чт</span>
+						<span class="table__cell">Физика</span>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<span class="table__title">Время</span>
+						<span class="table__cell">12:00</span>
+					</li>
+					<li>
+						<span class="table__title">Пн</span>
+						<span class="table__cell">Физика</span>
+					</li>
+					<li>
+						<span class="table__title">Вт</span>
+						<span class="table__cell">Инф-ка</span>
+					</li>
+					<li>
+						<span class="table__title">Ср</span>
+						<span class="table__cell">Химия</span>
+					</li>
+					<li>
+						<span class="table__title">Чт</span>
+						<span class="table__cell">Алгебра</span>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</section>
-
-	<!-- <div class="modal">
-		<div class="modal__dialog">
-			<div class="modal__content">
-				<form action="#">
-					<div class="modal__close" data-close>&times;</div>
-					<div class="modal__title">Добавление сотрудника</div>
-					<input required data-name placeholder="Введите имя сотрудника" name="name" type="text"
-						class="modal__input">
-					<input required data-surname placeholder="Введите фамилию сотрудника" name="surname" type="text"
-						class="modal__input">
-					<button class="modal__btn-save">Сохранить</button>
-				</form>
-			</div>
-		</div>
-	</div> -->
-
-	<div class="toasts"></div>
 
 	<script src="js/script.js"></script>
 </body>
